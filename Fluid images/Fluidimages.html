@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fluid images</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body {margin:0; }
+	#container {
+		width: 80%;
+	max-width: 800%px;
+	margin: 0 auto;}
+	
+	img{max-width: 100%;}
+	@media all and (max-width: 600px){
+		#container {
+			width: 100%;		}
+		
+	}
+	
+	
+	</style>
+</head>
+	<body>
+	<h1>Fluid images</h1>
+	<div id="container">
+		<header>
+			<img src="dam.jpg" alt="bridge dam"
+				srcset="dam.jpg 800w, dam-800px.jpg 1600w">
+		</header>
+		<main></main>
+		<footer></footer>
+	</div>
+	
+	
+	</body>
+</html>
